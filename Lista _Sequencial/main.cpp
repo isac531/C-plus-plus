@@ -132,7 +132,7 @@ int main() {
                 novaLista.setId(id);
                 listas[id] = novaLista;
 
-                int qtdInicial = 5 + rand() % 6; // insere de 5 a 10 elementos
+                int qtdInicial = 5 + rand() % 6; 
                 cout << "\nCriando lista de ID: " << id << " com " << qtdInicial << " elementos iniciais.\n";
 
                 for (int i = 1; i <= qtdInicial; i++) {
@@ -167,7 +167,7 @@ int main() {
                 }
 
                 if (!listas[id].estaVazia()) {
-                    int tamanhoAtual = listas[id].obterTamanho(); // ← atualizado aqui
+                    int tamanhoAtual = listas[id].obterTamanho(); 
                     int posRemover = 1 + rand() % tamanhoAtual;
                     listas[id].remover(posRemover);
                     cout << "Removido elemento da posição " << posRemover << "\n";
